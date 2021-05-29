@@ -314,7 +314,7 @@
 }
 
 .home {
-  padding: 140px 0 0 30px;
+  padding: 140px 0 0 20px;
   text-transform: uppercase;
   position: absolute;
   top: 0;
@@ -331,7 +331,7 @@
 
 .home__text__name {
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin: 0;
   font-weight: 400;
 }
@@ -340,18 +340,18 @@
   width: 70%;
   margin-top: 13px;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media all and (min-width: 700px) {
   .home__text__name {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
   .home__text__title {
     width: 100%;
     margin-top: 13px;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -369,7 +369,7 @@
 
 @media all and (min-width: 1700px) {
   .home {
-    padding-top: 250px;
+    padding: 250px 0 0 40px;
   }
   .home__text__name {
     font-size: 4.4rem;
@@ -667,14 +667,6 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
-}
-
-.work__card:hover {
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  opacity: 1;
 }
 
 .work__card__circle {
