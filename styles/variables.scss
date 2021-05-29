@@ -1,0 +1,35 @@
+$primary-white: #fff;
+$primary-black: #000;
+$primary-gray: #0d0d0c;
+
+
+@mixin flex($jus: center, $ali: center) {
+  display: flex;
+  justify-content: $jus;
+  align-items: $ali;
+}
+
+@mixin pseudo(
+  $width: 100%,
+  $top: 0,
+  $left: 0,
+  $background: transparent,
+  $index: 1
+) {
+  position: absolute;
+  content: "";
+  top: $top;
+  left: $left;
+  width: $width;
+  height: 100%;
+  background: $background;
+  z-index: $index;
+}
+
+@mixin header(){
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 10px;        
+  text-shadow: 4px 1px 12px black;
+  text-transform: uppercase;
+}

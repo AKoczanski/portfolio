@@ -1,0 +1,150 @@
+.work{
+    position: relative;
+    width: 100%;
+
+    &:hover &__card:not(:hover){
+        filter: blur(20px);
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+
+
+    &__header{
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+        h1{
+            @include header;
+        }
+    }
+
+    &__card{
+        position: relative;
+        width: 300px;
+        height: 480px;
+        background-color: #fff;
+        margin: 30px auto;
+        border-radius: 20px;
+        @include flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        transition: 0.5s;
+        color: white;
+
+        &:hover{
+           filter: blur(0px);
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        &__circle{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            clip-path: circle(180px at center 0);
+            text-align: center;
+             
+            img{
+                width: 100%;
+                height: 60%;
+            }
+        }
+
+        &__content{
+            position: absolute;
+            bottom: 50px;
+            page-break-after: 20px;
+            text-align: center;
+
+            p{
+                color: #666;
+                padding: 0 20px;
+            }
+        }
+
+        &__buttons{
+            @include flex(space-evenly);
+
+            a{
+                font-weight: bold;
+                width: 20%;
+                padding: 10px 20px;
+                background-color: #00CCCC;
+                text-decoration: none;
+                color: black;
+                border-radius: 30px;
+                border: 1px solid transparent;
+                transition: .25s;
+
+                &:hover{
+                    background-color: white;
+                    border-color: black;
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (min-width: 1000px) {
+    .work{
+       .container{
+           display: flex;
+           justify-content: space-around;
+       }
+       &__header{
+           h1{
+               font-size: 1.5rem;
+               font-weight: bold;
+           }
+       }
+    } 
+}
+
+@media all and (min-width: 1360px){
+    .work{
+        .container{
+            justify-content: space-evenly;
+        }
+
+        &__card{
+            width: 400px;
+            height: 520px;
+            margin: 30px auto;
+
+            &__circle{
+                clip-path: circle(240px at center 0);
+            }
+
+             &__content{
+                p{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and(min-width: 1900px){
+    .work{
+        margin-top: 300px;
+        &__header{
+            h1{
+                font-size: 2rem;
+            }
+        }
+        &__card{
+            height: 540px;
+            &__circle{
+                clip-path: circle(240px at center 0);
+            }
+
+             &__content{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

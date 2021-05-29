@@ -1,0 +1,165 @@
+.contact{
+    background-color: #B2B3B3;
+    @include flex;
+    flex-flow: column wrap;
+    padding-bottom: 10px;
+    margin-top: 100px;
+
+    &__header{
+        margin-top: 20px;
+        h1{
+            @include header;
+        }
+    }
+
+    .info{
+        @include flex;
+        flex-flow: column wrap;
+        width: 100%;
+
+        &__form{
+            @include flex;
+            flex-flow: column wrap;
+            width: 100%;
+
+            &__input{
+                border: none;
+                width: 80%;
+                margin-top: 7px;
+                padding: 10px;
+                text-transform: uppercase;
+                max-width: 375px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            &__textarea{
+                height: 100px;
+            }
+
+            &__submit{
+                display: block;
+                width: 100px;
+                height: 50px;
+                background-color: #00CCCC;
+                color: black;
+                font-weight: bold;
+                text-transform: uppercase;
+                border: none;
+                outline: none;
+                border-radius: 30px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                transition: .5s;
+                cursor: pointer;
+                border: 1px solid transparent;
+
+                &:hover{
+                    background-color: white;
+                    border-color: black;
+                }
+            }
+        }
+
+        &__socials{
+            width: 100%;
+            max-width: 420px;
+            @include flex(space-evenly);
+
+            &__social{
+                width: 57px;
+                height: 57px;
+                border-radius: 12px;
+                font-size: 1.7rem;
+                @include flex;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                cursor: pointer;
+                color: $primary-white;
+
+                &::after{
+                    @include pseudo(200%, 123%, -150%, $primary-white, -1);
+                    height: 160%;
+                    transform: rotate(-57deg);
+                    animation: out 0.4s ease-in-out both;
+                }
+
+                &:hover::after{
+                    animation: in 0.6s ease-in-out both;
+                }
+            }
+
+             &__github {
+                background-color: #211f1f;
+
+                &:hover {
+                color: #211f1f;
+                }
+            }
+
+            &__linkedin{
+                background-color: #0074B4;
+
+                &:hover{
+                    color: #0074B4;
+                }
+            }
+        }
+    }
+
+    &__copyright{
+        display: block;
+        margin-top: 20px;
+        color: $primary-white;
+    }
+}
+
+
+@media all and (min-width: 1900px) {
+    .contact{
+        &__header{
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+
+@keyframes in {
+  0% {
+    top: 123%;
+    left: -180%;
+  }
+
+  75% {
+    top: -123%;
+    left: 20%;
+  }
+
+  100% {
+    top: -10%;
+    left: -50%;
+  }
+}
+
+@keyframes out {
+  0% {
+    top: -10%;
+    left: -50%;
+  }
+
+  25% {
+    top: -123%;
+    left: 20%;
+  }
+
+  100% {
+    top: 123%;
+    left: -180%;
+  }
+}

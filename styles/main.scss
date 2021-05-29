@@ -1,0 +1,37 @@
+@import "./variables";
+@import "./navigation";
+@import "./home";
+@import "./about";
+@import "./skills";
+@import "./projects";
+@import "./contact";
+
+html{
+    // scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 272px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.--stop-scrolling{
+    overflow: hidden;
+}

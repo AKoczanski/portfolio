@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&family=Muli:wght@300;500;600;800&display=swap"
+        as="style" rel="preload" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&family=Muli:wght@300;500;600;800&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>Koczański Adrian - Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__icon">
+            <a href="#about" class="header__icon__item">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="wave__fill"></path>
+            </svg>
+        </div>
+        <nav class="mobile">
+            <div class="mobile__hamburger">
+                <span class="mobile__hamburger__item"></span>
+                <span class="mobile__hamburger__item"></span>
+                <span class="mobile__hamburger__item"></span>
+                <span class="mobile__hamburger__item"></span>
+            </div>
+        </nav>
+        <div class="nav">
+            <ul class="nav__links">
+                <li>
+                    <a href="#home" class="nav__links__link"> start </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav__links__link"> about </a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav__links__link"> skills </a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav__links__link"> projects </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav__links__link"> contact </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home__text" data-aos="fade-right">
+            <h1 class="home__text__name"></h1>
+            <h2 class="home__text__title">front-end developer</h2>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="info">
+            <div class="info__image" data-aos="fade-right">
+                <img src="images/myself.jpg" alt="Myself in Mountains" />
+            </div>
+            <div class="info__description" data-aos="fade-left">
+                <h2 class="info__description__title">Hi!</h2>
+                <p class="info__description__text">
+                    Hi my name is Adrian Koczański and my main professional goal is to find a job as Junior Front-End
+                    Developer. I have studied computer science at the Catholic University of Lublin. I enjoy learning
+                    about new technologies and have passion for Web Development.
+                </p>
+                <a href="https://drive.google.com/file/d/1VPiUFtPlzcsVyG9NP43gEjuC6TfGO7L1/view?usp=sharing"
+                    target="_blank">CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills" data-aos="fade-up">
+        <div class="skills__header">
+            <h1>My skills</h1>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>When writing code, I always try to comply with the latest standards. I am using semantic
+                        syntax compatible with HTML version 5.</p>
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="swiper-slide">
+                    <p>I create responsive websites, I use the @media rule, animations, I know flexbox and I also
+                        mastered preprocessors such as SCSS.</p>
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="swiper-slide">
+                    <p>Most popular programming language. In my projects I am trying to use ES6. I fell in love with
+                        arrow functions, destructing and much more.</p>
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="swiper-slide">
+                    <p>Currently most popular JavaScript library. Every day i dive deeper into React and I try to
+                        learn more advanced concepts like Redux. I know React hooks, custom hooks, API, working with
+                        forms, sending HTTP requests and much more.</p>
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="swiper-slide">
+                    <p>Preprocessors CSS like SASS makes our job easier. Sass lets us use features that don't exist
+                        in CSS yet like variables, nesting, mixins, inheritance and other.</p>
+                    <i class="fab fa-sass"></i>
+                </div>
+                <div class="swiper-slide">
+                    <p>One of most popular and powerful OOP language. I used it in the second, third year of my
+                        studies and on my intership in ARiMR.</p>
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="swiper-slide">
+                    <p>I use this data base in my React projecst due to the support authentication. I focus on
+                        email/password authentication for the most part.</p>
+                    <img src="images/icons/firebase.png">
+                </div>
+                <div class="swiper-slide">
+                    <p>Git and Github are great tools for working in a team, but not only - it gives me an
+                        opportunity to show my projects.</p>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="work" id="projects" data-aos="zoom-in-up">
+        <div class="work__header">
+            <h1>My projects</h1>
+        </div>
+        <div class="container">
+            <div class="work__card" data-aos="flip-up">
+                <div class="work__card__circle">
+                    <img src="images/projects/expense.PNG" alt="Expense managment project" />
+                </div>
+                <div class="work__card__content">
+                    <p>This is simple React application to expense managment and income. In this project i used react
+                        features like hooks, context, custom hooks and many other.</p>
+                    <div class="work__card__buttons">
+                        <a href="https://zealous-hermann-cad7b7.netlify.app/" target="_blank">Live</a>
+                        <a href="https://github.com/AKoczanski/expense-managment" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work__card" data-aos="flip-up">
+                <div class="work__card__circle">
+                    <img src="images/projects/portf.PNG" alt="My own portfolio project">
+                </div>
+                <div class="work__card__content">
+                    <p>My own portfolio where i want to share my work and skills. To write this page i used html, scss,
+                        javascript, swiper and aos - animate on scroll library</p>
+                    <div class="work__card__buttons">
+                        <a href="#">Live</a>
+                        <a href="https://github.com/AKoczanski/portfolio" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work__card" data-aos="flip-up">
+                <div class="work__card__circle">
+                    <img src="images/projects/searchMovie.PNG" alt="My own portfolio project">
+                </div>
+                <div class="work__card__content">
+                    <p>An application where the user can find his favorite movie, read its description and see the
+                        rating of others. In this application I used features like React portals, context, movie API and
+                        much more.</p>
+                    <div class="work__card__buttons">
+                        <a href="https://amazing-williams-3453e5.netlify.app/" target="_blank">Live</a>
+                        <a href="https://github.com/AKoczanski/movie-searcher" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="500">
+        <div class="contact__header">
+            <h1 class="contact__header__title">contact</h1>
+        </div>
+        <article class="info">
+            <form class="info__form" action="https://formspree.io/f/xeqprner" method="POST">
+                <label class="info__form__label" for="name"></label>
+                <input type="text" placeholder="name" class="info__form__input" id="name" required name="name" />
+                <label class="info__form__label" for="email"></label>
+                <input type="text" class="info__form__input" placeholder="e-mail" id="email" required name="email" />
+                <input type="text" name="_gotcha" style="display: none" />
+                <label class="info__form__label" for="message"></label>
+                <textarea class="info__form__input info__form__textarea" placeholder="message" id="message"
+                    name="message" required></textarea>
+
+                <button class="info__form__submit">send</button>
+            </form>
+
+            <article class="info__socials">
+                <a href="https://www.linkedin.com/in/adrian-koczanski/" rel="noopener noreferrer" target="_blank">
+                    <span class="info__socials__social info__socials__linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </span>
+                </a>
+                <a href="https://github.com/AKoczanski" rel="noopener noreferrer" target="_blank">
+                    <span class="info__socials__social info__socials__github">
+                        <i class="fab fa-github"></i>
+                    </span>
+                </a>
+            </article>
+        </article>
+        <span class="contact__copyright">Copyright &copy; 2021 - Adrian Koczański</span>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/skills.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/typer.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="https://kit.fontawesome.com/777dc26fd2.js" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

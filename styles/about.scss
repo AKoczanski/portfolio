@@ -1,0 +1,115 @@
+.about{
+    @include flex;
+    flex-flow: column wrap;
+    width: 100%;
+    background: none;
+    position: relative;
+    overflow-x: hidden;
+
+    .info{
+        @include flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &__image{
+            width: 100%;
+            max-width: 240px;
+            object-fit: contain;
+            position: relative;
+            margin: 20px 0;
+            padding-left: 0;
+
+            img{
+                width: 100%;
+                height: auto;
+                box-shadow:10px 10px 15px 3px #00cccc
+            }
+           
+        }
+
+        &__description{
+
+            padding: 0 40px;
+
+            &__title{
+                text-align: center;
+            }
+            &__text{
+                text-align: center;
+            }
+            a{
+                display: block;
+                height: 40px;
+                width: 30%;
+                padding-top: 20px;
+                background-color:#00cccc;
+                border-radius: 10px;
+                text-align: center;
+                margin: 0 auto;
+                font-weight: bold;
+                box-shadow: 14px 10px 50px -15px #000000;
+                color: $primary-black;
+                border: 1px solid transparent;
+                transition: .25s;
+
+                &:hover{
+                    border-color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1000px){
+        .about{
+        @include flex;
+        flex-flow: row wrap;
+
+        .info{
+            margin-top: 100px;
+
+            &__image{
+                max-width: 380px;
+            }
+
+            &__description{
+                padding: 0 50px;
+                width: 50%;
+
+                &__title{
+                    text-align: center;
+                    font-size: 2rem;
+                }
+                &__text{
+                    text-align: center;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1400px){
+     .about{
+        .info{
+            margin-top: 100px;
+
+            &__image{
+                max-width: 480px;
+            }
+
+            &__description{
+                &__title{
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+                &__text{
+                    padding: 0 100px;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
