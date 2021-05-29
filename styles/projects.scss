@@ -2,12 +2,6 @@
     position: relative;
     width: 100%;
 
-    &:hover &__card:not(:hover){
-        filter: blur(20px);
-        transform: scale(0.9);
-        opacity: 0.5;
-    }
-
 
     &__header{
         margin-top: 100px;
@@ -31,12 +25,6 @@
         box-shadow: 0 15px 25px rgba(0,0,0,0.2);
         transition: 0.5s;
         color: white;
-
-        &:hover{
-           filter: blur(0px);
-            transform: scale(1.1);
-            opacity: 1;
-        }
 
         &__circle{
             position: relative;
@@ -104,6 +92,7 @@
 
 @media all and (min-width: 1360px){
     .work{
+
         .container{
             justify-content: space-evenly;
         }
@@ -129,6 +118,13 @@
 @media all and(min-width: 1900px){
     .work{
         margin-top: 300px;
+
+        &:hover &__card:not(:hover){
+            filter: blur(20px);
+            transform: scale(0.9);
+            opacity: 0.5;
+         }
+
         &__header{
             h1{
                 font-size: 2rem;
@@ -136,6 +132,13 @@
         }
         &__card{
             height: 540px;
+
+            &:hover{
+                filter: blur(0px);
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
             &__circle{
                 clip-path: circle(240px at center 0);
             }

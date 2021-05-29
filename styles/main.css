@@ -630,14 +630,6 @@
   width: 100%;
 }
 
-.work:hover .work__card:not(:hover) {
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  opacity: 0.5;
-}
-
 .work__header {
   margin-top: 100px;
   margin-bottom: 50px;
@@ -779,11 +771,25 @@
   .work {
     margin-top: 300px;
   }
+  .work:hover .work__card:not(:hover) {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.5;
+  }
   .work__header h1 {
     font-size: 2rem;
   }
   .work__card {
     height: 540px;
+  }
+  .work__card:hover {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
   }
   .work__card__circle {
     -webkit-clip-path: circle(240px at center 0);
